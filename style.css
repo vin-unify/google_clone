@@ -69,6 +69,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    padding-top: 20px;
     /* margin-top: 80px; */
 }
 
@@ -90,7 +91,7 @@ main {
     border-radius: 24px;
     padding: 8px 16px;
     margin-bottom: 1rem;
-    box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+    box-shadow: 0px 3px 10px 0px rgba(31, 31, 31, 0.08);
 }
 
 .search-box:hover {
@@ -102,9 +103,9 @@ main {
     flex-grow: 1;
     border: none;
     outline: none;
-    margin: 0 8px;
+    margin: 0px 5px;
     font-size: 16px;
-    height : 30px;
+    height : 32px;
 }
 
 .search-buttons {
@@ -137,7 +138,7 @@ button:hover {
     align-items: center;
     gap: 0.5rem;
     font-size: 13px;
-    margin:10px;
+    margin:5px;
 }
 
 .today-google a {
@@ -146,8 +147,10 @@ button:hover {
 }
 
 .languages {
+    display:inline-block;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 28px;
 }
 
 .languages a {
