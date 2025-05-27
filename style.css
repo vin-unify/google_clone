@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 0.5rem 1rem ;
+    position: relative;
+    z-index : 1000;
+    background-color:transparent;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    color: rgba(0, 0, 0, .87);
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position:relative;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.apps-icon {
+    transform: rotate(90deg);
+    font-size: 20px;
+}
+
+.profile-icon {
+    background-color: #8e44ad;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid transparent;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* margin-top: 80px; */
+}
+
+.search-container {
+    width: 100%;
+    max-width: 584px;
+}
+
+.search-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+}
+
+.search-box:hover {
+    box-shadow: 0 2px 8px 1px rgba(64, 60, 67, .24);
+    border-color: transparent;
+}
+
+.search-box input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    margin: 0 8px;
+    font-size: 16px;
+    height : 30px;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 10px;
+    
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size:14px;
+    
+}
+
+button:hover {
+    border-color: #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.today-google {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 13px;
+    margin:10px;
+}
+
+.today-google a {
+    color: #1a0dab;
+    font-size: 13px;
+}
+
+.languages {
+    text-align: center;
+    font-size: 13px;
+}
+
+.languages a {
+    margin: 0 4px;
+    color: #1a0dab;
+}
+
+footer {
+    background-color: #f2f2f2;
+    margin-top: auto;
+}
+
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    color: #1F1F1F;
+    font-size: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.left-footer, .right-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+footer a {
+    color: #1F1F1F;
+    padding-right:18px;
+}
+
+.voice-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #474747;
+}
+
+.camera-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #474747;
+}
+
+.voice-icon{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right : 10px;
+}
+
+.camera-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.apps-icon, .beaker-icon {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    
+}
+
+.apps-icon svg, .beaker-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+
+.apps-icon:hover, .beaker-icon:hover {
+    background-color: rgba(60,64,67,0.08);
+    border-radius: 50%;
+}
+
+.profile-icon:hover {
+    text-decoration: none;
+    box-shadow: 0 0 0 5px #dfdddd;
+}
